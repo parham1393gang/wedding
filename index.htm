@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff9f5">
+
+  <title>دعوت نامه ی  عروسی</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Opening Screen -->
+  <div class="intro" id="intro">
+    <div class="envelope">
+      <div class="flower">❀</div>
+      <p class="small-title">A SPECIAL INVITATION</p>
+      <h2>یک دعوت عاشقانه</h2>
+      <p>برای لحظه‌ای زیبا و فراموش‌نشدنی</p>
+      <button class="open-btn" id="openBtn">
+        مشاهده دعوت‌نامه
+      </button>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="decor decor-one">❀</div>
+      <div class="decor decor-two">✿</div>
+      <div class="decor decor-three">🌸</div>
+      <div class="decor decor-four">❁</div>
+
+      <div class="hero-content">
+        <p class="eyebrow">A BEAUTIFUL BEGINNING</p>
+
+        <h1 id="groomName">مسعود</h1>
+
+        <div class="and">&</div>
+
+        <h1 id="brideName">فاطیما</h1>
+
+        <div class="gold-line"></div>
+
+        <p class="hero-description">
+          آغاز یک داستان عاشقانه...<br>
+          دعوتی برای سهیم شدن در زیباترین لحظه زندگی‌مان
+        </p>
+
+        <a href="#invitation" class="scroll-link">
+          ادامه دعوت‌نامه ↓
+        </a>
+      </div>
+    </section>
+
+    <!-- Invitation -->
+    <section class="section" id="invitation">
+      <p class="section-label">WITH LOVE</p>
+
+      <h2 class="section-title">به نام عشق</h2>
+
+      <p class="section-subtitle">
+        بعضی لحظه‌ها برای همیشه در قلب انسان می‌مانند...
+      </p>
+
+      <div class="divider">❀</div>
+
+      <div class="message">
+        با قلبی سرشار از عشق و شادی،<br>
+        از شما دعوت می‌کنیم تا در آغاز فصل تازه‌ای از زندگی‌مان،
+        همراه و هم‌قدم ما باشید.<br>
+        حضور گرم شما، زیبایی این شب را چندین برابر خواهد کرد.
+
+        <div class="message-names">
+          <span id="messageGroom">مسعود</span>
+          <span>&</span>
+          <span id="messageBride">فاطیما</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Countdown -->
+    <section class="section countdown-section">
+      <p class="section-label">THE BIG DAY</p>
+
+      <h2 class="section-title">تا دیدارمان...</h2>
+
+      <p class="section-subtitle">
+        منتظر یک روز زیبا و به‌یادماندنی هستیم
+      </p>
+
+      <div id="countdown" class="countdown">
+        <p>تاریخ مراسم به‌زودی اعلام می‌شود 🌸</p>
+      </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="section details-section">
+      <p class="section-label">EVENT INFORMATION</p>
+
+      <h2 class="section-title">جزئیات مراسم</h2>
+
+      <p class="section-subtitle">
+        مشتاق دیدار شما در این شب خاطره‌انگیز هستیم
+      </p>
+
+      <div class="details">
+
+        <div class="detail-card">
+          <div class="detail-icon">♡</div>
+          <h3>تاریخ مراسم</h3>
+          <p id="eventDate">به‌زودی اعلام می‌شود</p>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">⌖</div>
+          <h3>نام تالار</h3>
+          <p id="eventVenue">به‌زودی اعلام می‌شود</p>
+        </div>
+
+      </div>
+
+      <a id="mapLink" class="map-button" href="#" target="_blank" rel="noopener" hidden>
+        مشاهده موقعیت تالار
+      </a>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp-section">
+      <p class="section-label">YOUR PRESENCE MATTERS</p>
+
+      <h2 class="section-title">منتظر دیدار شما هستیم</h2>
+
+      <p class="section-subtitle">
+        لطفاً حضور خود را اعلام کنید
+      </p>
+
+      <form id="rsvpForm" class="rsvp-form">
+
+        <input
+          type="text"
+          id="guestName"
+          placeholder="نام و نام خانوادگی شما"
+          required
+          maxlength="80"
+        >
+
+        <select id="attendance" required>
+          <option value="">وضعیت حضور خود را انتخاب کنید</option>
+          <option value="حضور خواهم داشت">
+            با افتخار حضور خواهم داشت
+          </option>
+          <option value="نمی‌توانم حضور داشته باشم">
+            متأسفانه نمی‌توانم حضور داشته باشم
+          </option>
+        </select>
+
+        <button type="submit">ثبت پاسخ</button>
+
+        <p id="result" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-flower">❀</div>
+      <p>با عشق، برای یک عمر خاطره</p>
+      <h3 id="footerNames">مسعود & فاطیما</h3>
+      <small>یک آغاز زیبا، یک عشق ماندگار</small>
+    </footer>
+
+  </main>
+
+  <!-- Music Control -->
+  <audio id="music" loop></audio>
+
+  <button
+    class="music-button"
+    id="musicButton"
+    aria-label="روشن و خاموش کردن موسیقی"
+    title="موسیقی"
+  >♫</button>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
